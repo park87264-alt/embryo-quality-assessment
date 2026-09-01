@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Private data and identifiers
+data/
+datasets/
+manifests/
+private/
+predictions/
+contact_sheets/
+*.csv
+*.tsv
+*.dcm
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+
+# Weights and generated artifacts
+weights/
+checkpoints/
+artifacts/
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npz
+*.npy
+
+# Logs, archives, and reports generated locally
+logs/
+tmp/
+temp/
+*.log
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.docx
+*.pdf
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

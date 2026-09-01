@@ -1,0 +1,109 @@
+{
+  "task": "Nantes weak ICM/TE supervision on event-aligned curve encoder",
+  "label_support": {
+    "ICM": 160,
+    "TE": 196,
+    "any": 196
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "best_mean_macro_f1": 0.354799868341535,
+      "best_metrics": {
+        "ICM": {
+          "support": 46,
+          "acc": 0.5869565217391305,
+          "balanced_acc": 0.3507936507936508,
+          "macro_f1": 0.3421474358974359,
+          "macro_auc_ovr": 0.6225919913419914
+        },
+        "TE": {
+          "support": 59,
+          "acc": 0.423728813559322,
+          "balanced_acc": 0.3863224637681159,
+          "macro_f1": 0.3674523007856341,
+          "macro_auc_ovr": 0.5436365466256771
+        }
+      },
+      "checkpoint": "not_distributed"
+    },
+    {
+      "seed": 43,
+      "best_mean_macro_f1": 0.3778567564070898,
+      "best_metrics": {
+        "ICM": {
+          "support": 49,
+          "acc": 0.5306122448979592,
+          "balanced_acc": 0.4560344827586207,
+          "macro_f1": 0.2581481481481481,
+          "macro_auc_ovr": NaN
+        },
+        "TE": {
+          "support": 59,
+          "acc": 0.5084745762711864,
+          "balanced_acc": 0.5077996715927751,
+          "macro_f1": 0.4975653646660316,
+          "macro_auc_ovr": 0.5383974861142474
+        }
+      },
+      "checkpoint": "not_distributed"
+    },
+    {
+      "seed": 44,
+      "best_mean_macro_f1": 0.3644045108538889,
+      "best_metrics": {
+        "ICM": {
+          "support": 48,
+          "acc": 0.6041666666666666,
+          "balanced_acc": 0.4008658008658008,
+          "macro_f1": 0.37382847038019457,
+          "macro_auc_ovr": 0.6292066726849336
+        },
+        "TE": {
+          "support": 59,
+          "acc": 0.4745762711864407,
+          "balanced_acc": 0.48919540229885056,
+          "macro_f1": 0.35498055132758327,
+          "macro_auc_ovr": 0.5798096812160368
+        }
+      },
+      "checkpoint": "not_distributed"
+    }
+  ],
+  "aggregate": {
+    "ICM": {
+      "macro_f1": {
+        "mean": 0.3247080181419262,
+        "std": 0.04880972721815406,
+        "n": 3
+      },
+      "macro_auc_ovr": {
+        "mean": NaN,
+        "std": NaN,
+        "n": 3
+      },
+      "balanced_acc": {
+        "mean": 0.4025646448060241,
+        "std": 0.042981179844358855,
+        "n": 3
+      }
+    },
+    "TE": {
+      "macro_f1": {
+        "mean": 0.40666607225974966,
+        "std": 0.06447685452216247,
+        "n": 3
+      },
+      "macro_auc_ovr": {
+        "mean": 0.5539479046519871,
+        "std": 0.0184116911055128,
+        "n": 3
+      },
+      "balanced_acc": {
+        "mean": 0.4611058458865805,
+        "std": 0.053422500813779666,
+        "n": 3
+      }
+    }
+  }
+}

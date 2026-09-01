@@ -1,0 +1,55 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "task": "Nantes 16-phase prediction from pseudo-segmentation structural curves",
+  "per_seed": [
+    {
+      "seed": 42,
+      "accuracy": 0.5032429245283019,
+      "balanced_accuracy": 0.39636902359197335,
+      "macro_f1": 0.3817908442683666,
+      "n_frames": 6784,
+      "epoch": 34,
+      "train_loss": 1.3234632387757301,
+      "checkpoint": "not_distributed"
+    },
+    {
+      "seed": 43,
+      "accuracy": 0.4609375,
+      "balanced_accuracy": 0.3978119125419277,
+      "macro_f1": 0.3767340752455688,
+      "n_frames": 6784,
+      "epoch": 33,
+      "train_loss": 1.3095267862081528,
+      "checkpoint": "not_distributed"
+    },
+    {
+      "seed": 44,
+      "accuracy": 0.49292452830188677,
+      "balanced_accuracy": 0.4304433151847738,
+      "macro_f1": 0.38724260553605405,
+      "n_frames": 6784,
+      "epoch": 33,
+      "train_loss": 1.300867736339569,
+      "checkpoint": "not_distributed"
+    }
+  ],
+  "aggregate": {
+    "accuracy": {
+      "mean": 0.48570165094339623,
+      "std": 0.018010454447936773
+    },
+    "balanced_accuracy": {
+      "mean": 0.40820808377289164,
+      "std": 0.015733713676591404
+    },
+    "macro_f1": {
+      "mean": 0.38192250834999647,
+      "std": 0.0042910996096032035
+    }
+  },
+  "interpretation": "If macro-F1 is above random chance (~0.0625 for 16 classes), the generated structural curves carry usable temporal development information. This is a pretraining signal, not a direct Gardner endpoint."
+}

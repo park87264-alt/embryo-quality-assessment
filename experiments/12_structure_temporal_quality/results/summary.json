@@ -1,0 +1,94 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "heads": {
+    "exp": {
+      "Expansion_support": 298,
+      "Expansion_acc": {
+        "mean": 0.668903803131991,
+        "std": 0.0015818943650706,
+        "n": 3
+      },
+      "Expansion_balanced_acc": {
+        "mean": 0.3821547387415197,
+        "std": 0.0011939907935147511,
+        "n": 3
+      },
+      "Expansion_macro_f1": {
+        "mean": 0.3856506259219996,
+        "std": 0.0012772880727980151,
+        "n": 3
+      },
+      "Expansion_macro_recall": {
+        "mean": 0.3821547387415197,
+        "std": 0.0011939907935147511,
+        "n": 3
+      },
+      "Expansion_macro_auc_ovr": {
+        "mean": 0.798532330410552,
+        "std": 0.0028492913498681335,
+        "n": 3
+      }
+    },
+    "icm": {
+      "ICM_support": 238,
+      "ICM_acc": {
+        "mean": 0.6498599439775911,
+        "std": 0.0052404165080867345,
+        "n": 3
+      },
+      "ICM_balanced_acc": {
+        "mean": 0.3533042846768337,
+        "std": 0.0027172530041931183,
+        "n": 3
+      },
+      "ICM_macro_f1": {
+        "mean": 0.3114342720516789,
+        "std": 0.0021413119728664397,
+        "n": 3
+      },
+      "ICM_macro_recall": {
+        "mean": 0.3533042846768337,
+        "std": 0.0027172530041931183,
+        "n": 3
+      },
+      "ICM_macro_auc_ovr": {
+        "mean": 0.6068252020097464,
+        "std": 0.005301656866213339,
+        "n": 3
+      }
+    },
+    "te": {
+      "TE_support": 234,
+      "TE_acc": {
+        "mean": 0.5327635327635328,
+        "std": 0.011216535433065219,
+        "n": 3
+      },
+      "TE_balanced_acc": {
+        "mean": 0.3552801101781509,
+        "std": 0.009235567140660306,
+        "n": 3
+      },
+      "TE_macro_f1": {
+        "mean": 0.29737820236159324,
+        "std": 0.012420003286216641,
+        "n": 3
+      },
+      "TE_macro_recall": {
+        "mean": 0.3552801101781509,
+        "std": 0.009235567140660306,
+        "n": 3
+      },
+      "TE_macro_auc_ovr": {
+        "mean": 0.5634124396801033,
+        "std": 0.005602561362755945,
+        "n": 3
+      }
+    }
+  },
+  "interpretation": "Structure-only prediction is a diagnostic lower-bound. Good DSC/IoU segmentation does not necessarily imply strong Gardner grading."
+}

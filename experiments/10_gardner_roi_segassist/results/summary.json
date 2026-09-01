@@ -1,0 +1,54 @@
+{
+  "runs": [
+    "outputs/formal_gardner_roi_segassist/seed_42",
+    "outputs/formal_gardner_roi_segassist/seed_43",
+    "outputs/formal_gardner_roi_segassist/seed_44"
+  ],
+  "metrics": {
+    "gardner_exp_macro_f1": {
+      "mean": 0.6711048529613195,
+      "std": 0.03321050195775479,
+      "n": 3
+    },
+    "gardner_exp_balanced_acc": {
+      "mean": 0.6982660342550826,
+      "std": 0.016310346526931092,
+      "n": 3
+    },
+    "gardner_exp_macro_recall": {
+      "mean": 0.6982660342550826,
+      "std": 0.016310346526931092,
+      "n": 3
+    },
+    "gardner_icm_macro_f1": {
+      "mean": 0.44442579268464805,
+      "std": 0.0168615547078535,
+      "n": 3
+    },
+    "gardner_icm_balanced_acc": {
+      "mean": 0.44389978213507625,
+      "std": 0.012562704351493243,
+      "n": 3
+    },
+    "gardner_icm_macro_recall": {
+      "mean": 0.44389978213507625,
+      "std": 0.012562704351493243,
+      "n": 3
+    },
+    "gardner_te_macro_f1": {
+      "mean": 0.46777103405410014,
+      "std": 0.01442458976928391,
+      "n": 3
+    },
+    "gardner_te_balanced_acc": {
+      "mean": 0.4820664326861848,
+      "std": 0.00826318257847948,
+      "n": 3
+    },
+    "gardner_te_macro_recall": {
+      "mean": 0.4820664326861848,
+      "std": 0.00826318257847948,
+      "n": 3
+    }
+  }
+}

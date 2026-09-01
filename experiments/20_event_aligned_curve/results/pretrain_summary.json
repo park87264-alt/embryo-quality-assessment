@@ -1,0 +1,53 @@
+{
+  "task": "Nantes 16-phase prediction with event-aligned structure curves",
+  "n_embryos": 704,
+  "frames_per_embryo": 32,
+  "feature_dim": 73,
+  "per_seed": [
+    {
+      "seed": 42,
+      "accuracy": 0.5526238207547169,
+      "balanced_accuracy": 0.46512486309072015,
+      "macro_f1": 0.44427349966910007,
+      "n_frames": 6784,
+      "epoch": 34,
+      "train_loss": 1.179979458451271,
+      "checkpoint": "not_distributed"
+    },
+    {
+      "seed": 43,
+      "accuracy": 0.5392099056603774,
+      "balanced_accuracy": 0.44573037743349736,
+      "macro_f1": 0.42877850457456623,
+      "n_frames": 6784,
+      "epoch": 31,
+      "train_loss": 1.1514702662825584,
+      "checkpoint": "not_distributed"
+    },
+    {
+      "seed": 44,
+      "accuracy": 0.5384728773584906,
+      "balanced_accuracy": 0.4871758174784345,
+      "macro_f1": 0.43515070402363226,
+      "n_frames": 6784,
+      "epoch": 32,
+      "train_loss": 1.1853672862052917,
+      "checkpoint": "not_distributed"
+    }
+  ],
+  "aggregate": {
+    "accuracy": {
+      "mean": 0.543435534591195,
+      "std": 0.006504063070959179
+    },
+    "balanced_accuracy": {
+      "mean": 0.4660103526675507,
+      "std": 0.016931611342350675
+    },
+    "macro_f1": {
+      "mean": 0.4360675694224328,
+      "std": 0.006358941204558363
+    }
+  },
+  "interpretation": "ICM/TE pseudo-mask features are suppressed before blastocyst-related phases to avoid biologically invalid curve interpretation."
+}

@@ -1,0 +1,59 @@
+{
+  "runs": [
+    "outputs/formal_dual_expert_resnet18/seed_42",
+    "outputs/formal_dual_expert_resnet18/seed_43",
+    "outputs/formal_dual_expert_resnet18/seed_44"
+  ],
+  "metrics": {
+    "phase_macro_f1": {
+      "mean": 0.7514378012546938,
+      "std": 0.042343919081178856,
+      "n": 3
+    },
+    "phase_macro_auc": {
+      "mean": 0.6080196819766296,
+      "std": 0.033516673522315764,
+      "n": 3
+    },
+    "phase_micro_acc": {
+      "mean": 0.7339285714285714,
+      "std": 0.03592694622219662,
+      "n": 3
+    },
+    "phase_micro_f1": {
+      "mean": 0.8179803579959305,
+      "std": 0.033330948409753515,
+      "n": 3
+    },
+    "gardner_exp_macro_f1": {
+      "mean": 0.6012658097971854,
+      "std": 0.03852978223116489,
+      "n": 3
+    },
+    "gardner_exp_balanced_acc": {
+      "mean": 0.6360965774265391,
+      "std": 0.024741722622658512,
+      "n": 3
+    },
+    "gardner_icm_macro_f1": {
+      "mean": 0.4378389364125866,
+      "std": 0.033605061998452306,
+      "n": 3
+    },
+    "gardner_icm_balanced_acc": {
+      "mean": 0.44408133623819895,
+      "std": 0.03351480875636235,
+      "n": 3
+    },
+    "gardner_te_macro_f1": {
+      "mean": 0.3919193256041289,
+      "std": 0.02108538710643598,
+      "n": 3
+    },
+    "gardner_te_balanced_acc": {
+      "mean": 0.4239578242776964,
+      "std": 0.01986951648921618,
+      "n": 3
+    }
+  }
+}
