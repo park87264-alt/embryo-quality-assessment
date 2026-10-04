@@ -31,6 +31,8 @@ Status meanings:
 | 25 | Class-imbalance loss ablation | `25_class_imbalance_ablation/src/class_imbalance_ablation.py` | Balanced Softmax F1 0.336 vs CE 0.293, but Accuracy 0.464 vs 0.511 | Entry and focused tests present |
 | 26 | Balanced Softmax calibration and cRT | `26_imbalance_calibration_crt/src/tune_imbalance_calibration.py` | Tuned BS Acc/F1 0.507/0.311; cRT 0.509/0.326 | Entry and focused tests present |
 | 27 | Ten-sample Nantes Gardner inference utility | `27_nantes_gardner_inference/src/predict_nantes_gardner_samples.py` | Utility only; real images and per-embryo predictions excluded | Entry present; de-identified code only |
+| 28 | Event-anchor temporal normalization and predicted gating | `28_event_anchor_temporal_normalization/src/event_anchor_temporal_normalization.py` | 360 embryos: raw Acc/F1 0.5935/0.4413; GT anchor 0.6803/0.5111 (oracle); predicted anchor + gate 0.5625/0.4158 | Completed three-seed formal run; two extra variants pending |
+| 29 | MedSAM-LoRA F0 embeddings, temporal context and gating, exploratory weak ICM/TE, FrameQC audit | `29_medsam_f0_temporal_gate_frameqc/src/medsam_f0_temporal_gate.py` | No verified F0 classification or QC comparison metrics | Protocol and focused tests present; GPU/data/checkpoint run pending |
 
 ## Main paper narrative
 
@@ -42,6 +44,8 @@ The strongest coherent sequence is:
 4. encode structural development curves and correct their biological timing with event alignment (18-23);
 5. test independent local experts and MoE routing (21, 24);
 6. address the remaining long-tail error with calibrated loss and two-stage classifier retraining (25-26).
+
+The next planned comparison (29) tests frozen MedSAM image features on F0 with identical embryo splits, then audits an externally trained frame-validity selector before any paired QC experiment. It is not yet a result in this sequence. A paper-ready evidence and table plan is in [the F0 report](f0_paper_experiment_report.md).
 
 Negative results are retained because they constrain the claims: good Dice does not guarantee good Gardner grading, Kromp does not provide temporal supervision, oracle flags overestimate deployable event gains, and weak local experts cannot be rescued by a forced MoE gate.
 

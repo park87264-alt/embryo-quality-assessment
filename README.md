@@ -54,6 +54,7 @@ MedSAM experiments additionally require an upstream MedSAM checkout and an autho
 - Macro-F1 and balanced accuracy are primary under class imbalance; raw accuracy is reported alongside them.
 - Ground-truth event flags are oracle inputs and must not be presented as deployable performance.
 - Kromp static samples are never claimed to provide continuous temporal trajectories.
+- The F0 MedSAM temporal-gating protocol is prepared in [experiment 29](experiments/29_medsam_f0_temporal_gate_frameqc/README.md); it has no verified classification result yet. The previous three-anchor comparison is [experiment 28](experiments/28_event_anchor_temporal_normalization/README.md).
 
 ## Privacy and release status
 
